@@ -39,12 +39,13 @@ interface SpacingLevels {
   lg: string
   base: string
   sm: string
+  xs: string
 }
 
 interface Margin extends SpacingLevels {}
 interface Padding extends SpacingLevels {}
 
-export type AvailableSpacing = 'lg' | 'base' | 'sm'
+export type AvailableSpacing = 'lg' | 'base' | 'sm' | 'xs'
 export type AvailableColors = 'primary' | 'secondary' | 'accent' | 'grey'
 export type AvailableFontWeights = 'thin' | 'regular' | 'medium' | 'bold'
 export type AvailableFontSizes = 'xxl' | 'xl' | 'lg' | 'base' | 'sm' | 'xs'

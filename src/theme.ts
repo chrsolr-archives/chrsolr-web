@@ -135,16 +135,19 @@ export const getTheme = (theme: 'lightTheme' | 'darkTheme'): DefaultTheme => ({
       lg: '1.5rem',
       base: '1rem',
       sm: '0.5rem',
+      xs: '0.25rem'
     },
     padding: {
       lg: '1.5rem',
       base: '1rem',
       sm: '0.5rem',
+      xs: '0.25rem'
     },
     levels: {
       lg: '1.5rem',
       base: '1rem',
       sm: '0.5rem',
+      xs: '0.25rem'
     },
   },
 })
