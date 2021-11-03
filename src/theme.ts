@@ -116,8 +116,8 @@ export const getTheme = (theme: 'lightTheme' | 'darkTheme'): DefaultTheme => ({
       xs: '0.075rem',
     },
     fontWeigths: {
-      thin: 200,
-      regular: 300,
+      thin: 300,
+      regular: 400,
       medium: 500,
       bold: 700,
     },

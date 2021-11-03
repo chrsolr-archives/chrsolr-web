@@ -12,11 +12,15 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0rem;
     padding: 0rem;
-    font-size: 'Lato', 'Open Sans', sans-serif;
   }
-
+  
   body {
     background-color: ${(props) => props.theme.colors.grey[0]};
+    color: ${(props) => props.theme.colors.grey[600]};
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: ${(props) => props.theme.typography.fontSizes.base};
+    font-weight: ${(props) => props.theme.typography.fontWeigths.regular};
+    line-height: ${(props) => props.theme.typography.lineHeights.base};
   }
 `
 
