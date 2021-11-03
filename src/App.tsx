@@ -1,17 +1,10 @@
-import React from "react";
-import { ThemeProvider } from "styled-components";
-import { lightTheme } from "./theme";
+import React from 'react'
+import ThemeContextProvider from './ThemeContextProvider'
 
 export default function App() {
   return (
-    <ThemeProvider theme={lightTheme}>
-      <div
-        css={`
-          color: red;
-        `}
-      >
-        <p>CHRSOLR</p>
-      </div>
-    </ThemeProvider>
-  );
+    <ThemeContextProvider theme={'lightTheme'}>
+      <main>CHRSOLR</main>
+    </ThemeContextProvider>
+  )
 }

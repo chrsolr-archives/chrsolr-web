@@ -1,18 +1,150 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from 'styled-components'
 
-declare module "styled-components" {
-  export interface DefaultTheme {
-    primaryColor: string;
-    secondaryColor: string;
-  }
+const lightTheme: DefaultTheme['colors'] = {
+  primary: {
+    50: '#FAFAFA',
+    100: '#F5F5F5',
+    200: '#EEEEEE',
+    300: '#E0E0E0',
+    400: '#BDBDBD',
+    500: '#9E9E9E',
+    600: '#757575',
+    700: '#616161',
+    800: '#424242',
+    900: '#212121',
+  },
+  secondary: {
+    50: '#FAFAFA',
+    100: '#F5F5F5',
+    200: '#EEEEEE',
+    300: '#E0E0E0',
+    400: '#BDBDBD',
+    500: '#9E9E9E',
+    600: '#757575',
+    700: '#616161',
+    800: '#424242',
+    900: '#212121',
+  },
+  accent: {
+    50: '#FAFAFA',
+    100: '#F5F5F5',
+    200: '#EEEEEE',
+    300: '#E0E0E0',
+    400: '#BDBDBD',
+    500: '#9E9E9E',
+    600: '#757575',
+    700: '#616161',
+    800: '#424242',
+    900: '#212121',
+  },
+  grey: {
+    0: '#FFFFFF',
+    50: '#FAFAFA',
+    100: '#F5F5F5',
+    200: '#EEEEEE',
+    300: '#E0E0E0',
+    400: '#BDBDBD',
+    500: '#9E9E9E',
+    600: '#757575',
+    700: '#616161',
+    800: '#424242',
+    900: '#212121',
+  },
 }
 
-export const lightTheme: DefaultTheme = {
-  primaryColor: "red",
-  secondaryColor: "#666",
-};
+const darkTheme: DefaultTheme['colors'] = {
+  primary: {
+    50: '#FAFAFA',
+    100: '#F5F5F5',
+    200: '#EEEEEE',
+    300: '#E0E0E0',
+    400: '#BDBDBD',
+    500: '#9E9E9E',
+    600: '#757575',
+    700: '#616161',
+    800: '#424242',
+    900: '#212121',
+  },
+  secondary: {
+    50: '#FAFAFA',
+    100: '#F5F5F5',
+    200: '#EEEEEE',
+    300: '#E0E0E0',
+    400: '#BDBDBD',
+    500: '#9E9E9E',
+    600: '#757575',
+    700: '#616161',
+    800: '#424242',
+    900: '#212121',
+  },
+  accent: {
+    50: '#FAFAFA',
+    100: '#F5F5F5',
+    200: '#EEEEEE',
+    300: '#E0E0E0',
+    400: '#BDBDBD',
+    500: '#9E9E9E',
+    600: '#757575',
+    700: '#616161',
+    800: '#424242',
+    900: '#212121',
+  },
+  grey: {
+    0: '#FFFFFF',
+    50: '#FAFAFA',
+    100: '#F5F5F5',
+    200: '#EEEEEE',
+    300: '#E0E0E0',
+    400: '#BDBDBD',
+    500: '#9E9E9E',
+    600: '#757575',
+    700: '#616161',
+    800: '#424242',
+    900: '#212121',
+  },
+}
 
-export const darkTheme: DefaultTheme = {
-  primaryColor: "#ff0000",
-  secondaryColor: "#cacaca",
-};
+export const getTheme = (theme: 'lightTheme' | 'darkTheme'): DefaultTheme => ({
+  colors: theme === 'lightTheme' ? lightTheme : darkTheme,
+  typography: {
+    fontSizes: {
+      xxl: '1.5rem',
+      xl: '1.5rem',
+      lg: '1.25rem',
+      base: '1rem',
+      sm: '0.085rem',
+      xs: '0.075rem',
+    },
+    fontWeigths: {
+      thin: 200,
+      regular: 300,
+      medium: 500,
+      bold: 700,
+    },
+    lineHeights: {
+      xxl: '2rem',
+      xl: '1.75rem',
+      lg: '1.5rem',
+      base: '1.5rem',
+      sm: '1.25rem',
+      xs: '1rem',
+    },
+  },
+  spacing: {
+    margin: {
+      lg: '1.5rem',
+      base: '1rem',
+      sm: '0.5rem',
+    },
+    padding: {
+      lg: '1.5rem',
+      base: '1rem',
+      sm: '0.5rem',
+    },
+    levels: {
+      lg: '1.5rem',
+      base: '1rem',
+      sm: '0.5rem',
+    },
+  },
+})
